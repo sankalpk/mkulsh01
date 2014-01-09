@@ -51,6 +51,13 @@ set :js_dir, 'javascripts'
 
 set :images_dir, 'images'
 
+activate :deploy do |deploy|
+  deploy.method = :git
+  # Optional Settings
+  # deploy.remote   = "custom-remote" # remote name or git url, default: origin
+  # deploy.branch   = "custom-branch" # default: gh-pages
+  # deploy.strategy = :submodule      # commit strategy: can be :force_push or :submodule, default: :force_push
+end
 
 # Build-specific configuration
 configure :build do
@@ -68,13 +75,6 @@ configure :build do
   activate :relative_assets
   set :relative_links, true
 
-  activate :deploy do |deploy|
-    deploy.method = :git
-    # Optional Settings
-    # deploy.remote   = "custom-remote" # remote name or git url, default: origin
-    # deploy.branch   = "custom-branch" # default: gh-pages
-    # deploy.strategy = :submodule      # commit strategy: can be :force_push or :submodule, default: :force_push
-  end
   # Or use a different image path
   # set :http_path, "/Content/images/"
 end
