@@ -1,0 +1,176 @@
+@charset "utf-8";
+
+body {
+  background: #F7F7F7;
+  font-size: 18px;
+  line-height:26px;
+  font-family: 'Ubuntu', sans-serif;
+  color: #636363;
+}
+
+nav{
+  position:fixed;
+  top:0px;
+  left:0px;
+  height:10px;
+  width:100%;
+  background-color:#636363;
+}
+
+nav span{
+  position:absolute;
+  color:#F7F7F7;
+  text-shadow: 0 1px 0 rgba(255, 255, 255, .5);
+  left:0px;
+  font-size:32px;
+  /*margin:10px 10px 10px 10px;*/
+}
+
+a{
+  text-decoration: none;
+  color:#940000;
+  cursor: pointer;
+  /*color:#F7F7F7;
+  background-color:#636363;
+  padding:3px;*/
+}
+
+/* Home */
+
+#content{
+  margin-top:10px;
+}
+.welcome {
+  padding-top:40px;
+  width:400px;
+  color: #636363;
+  margin-left:auto;
+  margin-right:auto;
+  -webkit-animation-name: welcome;
+  -webkit-animation-duration: .9s; }
+
+@-webkit-keyframes welcome {
+  from {
+    -webkit-transform: scale(0);
+    opacity: 0;
+  }
+  50% {
+   -webkit-transform: scale(0);
+   opacity: 0;
+  }
+  82.5% {
+    -webkit-transform: scale(1.03);
+    -webkit-animation-timing-function: ease-out;
+    opacity: 1;
+  }
+  to {
+    -webkit-transform: scale(1);
+  }
+}
+
+#homeprofile{
+  position:relative;
+  left:100px;
+  border-radius: 50%;
+  width: 200px;
+  height: 200px;
+  margin:0 auto;
+}
+
+/* Sidebar */
+
+#connectHide{
+  float:right;
+  font-size:14px;
+  padding-top:10px;
+  padding-right:10px;
+  padding-left:25px;
+  padding-bottom:25px;
+  cursor: pointer;
+}
+
+.sidebar{
+  position: fixed;
+  top:0px;
+  right:-300px;
+  width:300px;
+  height:100%;
+  background-color:#636363;
+  color:#F7F7F7;
+}
+
+.sidebar h1{
+  margin:20px;
+}
+
+.sidebar p{
+  margin:20px;
+}
+
+.sidebar a{
+  color:#F7F7F7;
+  border-bottom:1px dotted;
+
+}
+
+.sidebar ul{
+  list-style-type:none;
+  padding: 0px;
+  margin: 20px;
+  margin-top:25px;
+}
+
+/* Portfolio */
+#portfolio{
+  padding-top:40px;
+  width:800px;
+  color: #636363;
+  margin-left:auto;
+  margin-right:auto;
+}
+
+.pitem{
+  margin-top:80px;
+  margin-bottom:30px;
+  padding-left:30px;
+  padding-top:10px;
+  /*background-color:#B8B8B8;*/
+  border-left:1px dotted #636363;
+}
+
+.pitem blockquote{
+  margin-right:0px;
+  padding-right:0px;
+}
+
+#portfolio h1 a{
+  border:none;
+  color: #940000;
+}
+#portfolio h2{
+  margin-top:0px;
+  margin-bottom:10px;
+  line-height:10px;
+}
+
+#portfolio h3{
+  margin-top:10px;
+  margin-bottom:0px;
+}
+
+.pitem img{
+  margin-right:30px;
+  margin-top:30px;
+  margin-bottom:30px;
+  margin-left:15px;
+  float:right;
+}
+
+#portfolio a{
+  color:#636363;
+  border-bottom:1px dotted;
+}
+
+.pitem .links{
+  clear:left;
+}
